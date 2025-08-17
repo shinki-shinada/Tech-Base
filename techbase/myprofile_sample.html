@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"><!-- for smartphone. ここは一旦、いじらなくてOKです。 -->
+	<meta charset="utf-8"><!-- 文字コード指定。ここはこのままで。 -->
+	<title>shinkiのプロフィール</title>
+
+</head>
+
+<body>
+
+
+<!-- 見出し 第１レベル -->
+<!--（氏名）の公開を避ける場合はイニシャルやニックネームでOK-->
+<h1 id="midashi_1"> shinkiのプロフィール </h1>
+
+
+<!--自分を象徴するような画像を入れてみよう-->
+<!--画像も同じフォルダに保存すること-->
+<div class="picture">
+	<img src="img/IMG_3371.JPG" alt="自分を象徴する写真など" title="プロフィール画像" width="320px" ><br>
+	<p>美術館行った時の猫のオブジェ</p>
+</div>
+
+
+<hr>
+
+<!-- 見出し 第２レベル ・以下、h2レベルで項目を色々書いていきましょう -->
+<!-- 自己紹介で言いたい項目を見出しにいれて、文章をつくりましょう。項目名は編集OK。項目を足してもOK。 -->
+<h2>所属など</h2>
+<ul>
+	<li>大学院で機械学習や画像処理の研究を行っている.</li>
+	<li>軽スポーツサークル 代表・設立</li>
+	<li>文化祭実行委員会 所属</li>
+</ul>
+
+<h2>趣味</h2>
+<ul>
+	<li>サッカー、バドミントン</li>
+	<li>音楽を聴くこと・弾くこと</li>
+</ul>
+
+<!-- HTMLで出来る色々な表現を試す -->
+<!-- ↑文字に意味を持たせることもできます。strong は太字。ググったりして色々と調べてみましょう -->
+<!-- 例として今回は「リスト表示」を作ってみましょう。項目数が３で足りないなら足してもOKです -->
+<!-- 番号をふるなら ol タグ、番号がいらないなら ul タグ で囲って、項目は li タグで括ります。 -->
+<!-- ol ・ ul 片方でOK -->
+<h2>最近聴いているアーティストトップ３</h2>
+<!-- <strong> 私の●●のトップ３です！</strong><br> -->
+<!-- ↑文字に意味を持たせることもできます。strong は強調。太字になります。 -->
+
+<ol>
+	<li><span style="color:gold">Mr.Children</span></li>
+	<li><span style="color:silver">ヨルシカ</span></li>
+	<li><span style="color:#b87333">NELKE</span></li>
+</ol>
+
+<hr>
+
+<!-- 以下は、見出しの名前は固定で、内容を編集してみましょう -->
+<div class="others">
+	<h2>その他</h2>
+	<!-- 見出し 第３レベル -->
+	<h3>使用PC</h3><!-- 編集して、自分の使うPCだけ残しましょう -->
+	Windows, Mac
+
+
+	<h3>PC利用経験や、普段の使い方</h3>
+	研究や調べ物に使っている.
+
+
+	<h3>自分の強みや弱みなど</h3>
+	強み：行動力や継続力があり, 好奇心旺盛<br>
+	弱み：優柔不断<br>
+	決断を急がず, 様々な角度から物事を検証・評価する傾向あり.<br>
+
+
+	<h3>TECH-BASE参加にあたり、意気込み</h3>
+	<span style="background-color: yellow">HTML, CSSは触ったことありますが, JavaScriptはないので頑張ります.</span><br>
+</div>
+
+<hr>
+<a href="#midashi_1"> このページのTOPへ </a> ／ <a href="https://www.youtube.com/@MrChildren/videos" target="_blank"> Mr.Children </a>
+
+<hr>
+
+<!-- 以下は投稿フォーム欄ですが、今は＆このままでは機能しておらずエラーが発生します。 -->
+<!-- したがって今はコピペするだけでOKです。スタートアップ以降のPHPミッションを進める際に、参考にしてください。 -->
+<form method="POST" action="">
+	お名前：<input type="text" name="name"><br>
+	コメント：<input type="text" name="comment"><br>
+	<input type="submit" name="submit" value="送信">
+</form>
+
+</body>
+</html>
